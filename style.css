@@ -1,0 +1,232 @@
+/* container{
+  font-family: Arial,Helvetica,sans-serif;
+} */
+body{
+  font:15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+}
+
+.container{
+  width:80%;
+  /* Makes the page responsive */
+  margin:auto;
+  position: relative;
+  overflow:hidden;
+  /* so there's no horizontal scroll bar */
+}
+header{
+  background:magenta;
+  color:white;
+  padding-top:5px;
+  min-height:30px;
+  border-bottom:5px #FF69B4 solid;
+}
+header a{
+  color:#FFFFFF;
+  text-decoration: none;
+  /* takes away link lines */
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul{
+  margin:0;
+  padding:0;
+}
+header li{
+  float: left;
+  /* Right flips the order of the list backwards. */
+  display: inline;
+  padding: 0 10px 0 10px;
+  /* Order of numbers: top, right, bottom, left. */
+}
+
+header #seoul{
+  float:left;
+}
+header #seoul h1{
+  margin:0;
+}
+header nav{
+  float: right;
+  margin-top: 5px;
+}
+
+/* header .highlight, header .current a{
+  color: white;
+  font-weight:bold;
+} */
+
+header a:hover{
+  color: yellow;
+  font-weight:bold;
+}
+
+/* Showcase;Hero Image */
+#showcase{
+background: url("../images/hero.jpg") no-repeat;
+ height: 800px;
+ background-color: magenta;
+ background-position: bottom;
+ background-size: cover;
+ text-align: center;
+ color: white;
+/* position: relative; */
+}
+
+#showcase h1{
+  margin-top: 0px;
+  font-size: 55px;
+  margin-bottom: 2px;
+}
+
+#showcase p{
+  font-size:20px;
+  font-weight: bold;
+  background-color: magenta;
+}
+
+/* Boxes */
+/* #boxes{
+ /* margin-top: 10px; */
+/* } */ 
+#boxes {
+  text-align: center;
+  background-color: magenta;
+}
+#boxes .box{
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  color: white;
+  background-color: #bf00ff
+}
+
+#boxes .box img{
+  width: 100px;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: auto;
+}
+/* Footer */
+footer{
+  padding: 20px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* position:absolute;
+  bottom: 0;
+  width: 100%; */
+  /* margin: auto; */
+  color: white;
+  background-color: darkorchid;
+  /* margin-top: 5px; */
+}
+footer #seoulf{
+  float:left;
+}
+footer #seoulf h1{
+  margin:0;
+}
+
+/* footer .highlight{
+  color:white;
+  font-weight:bold;
+} */
+
+ footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer li{
+  /* float: left; */
+  /* style: inline; */
+  padding: 0 10px 0 10px;
+}
+
+/* Activities and Festivities Page */
+
+.page2{
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+
+.column{
+/* display: block; */
+text-align: center;
+background-color: magenta;
+padding: 5px;
+width: 35%;
+margin: auto;
+border-radius: 12px;
+box-shadow: 2px 2px 5px #bf00ff;
+/* horizontal vertical blur */
+margin-bottom: 10px;
+}
+
+.column img{
+/* float: center; */
+height: 200px;
+width: 200px;
+/* object-fit: contain; */
+border-radius: 12%;
+}
+.column h3{
+font-weight: bolder;
+color: white;
+}
+
+.column h4, span, p{
+font-weight: bold;
+color: white;
+}
+
+
+form{
+width: 420px;
+margin: auto;
+padding: 20px;
+}
+form h1{
+  text-align: center;
+  color: white;
+  background: magenta;
+  border-radius: 5px;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 3px #ff00ff;
+}
+form .contact {
+  color:white;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: pink;
+  border:2px solid hotpink;
+  transition: all 0.3s;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px #ff00ff;
+}
+
+textarea {
+ height: 150px;
+ resize: none;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:pink;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight: bold;
+}
+[type="submit"]:hover { background:hotpink; }
