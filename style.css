@@ -3,24 +3,26 @@
 } */
 body{
   font:15px/1.5 Arial, Helvetica, sans-serif;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .container{
-  width:80%;
+  width:100%;
   /* Makes the page responsive */
-  margin:auto;
+  margin:0;
+  height: 100%;
   position: relative;
   overflow:hidden;
+  min-height: 100%;
   /* so there's no horizontal scroll bar */
 }
 header{
-  background:magenta;
+  background:darkviolet;
   color:white;
   padding-top:5px;
   min-height:30px;
-  border-bottom:5px #FF69B4 solid;
+  border-bottom:5px black solid;
 }
 header a{
   color:#FFFFFF;
@@ -65,103 +67,108 @@ header a:hover{
 /* Showcase;Hero Image */
 #showcase{
 background: url("../images/hero.jpg") no-repeat;
- height: 800px;
+ height: 800px; 
  background-color: magenta;
  background-position: bottom;
  background-size: cover;
  text-align: center;
  color: white;
+ margin: 0;
+ border-bottom:5px black solid;
 /* position: relative; */
 }
 
 #showcase h1{
   margin-top: 0px;
   font-size: 55px;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
+  color: black;
 }
 
 #showcase p{
   font-size:20px;
   font-weight: bold;
-  background-color: magenta;
+  background-color: blueviolet;
 }
 
-/* Boxes */
+
 /* #boxes{
- /* margin-top: 10px; */
-/* } */ 
-#boxes {
-  text-align: center;
-  background-color: magenta;
-}
-#boxes .box{
-  float: left;
-  width: 33.33%;
   text-align: center;
   color: white;
-  background-color: #bf00ff
+  background-color: blueviolet;
+} */
+#boxes .box{
+  float: left;
+  width: 33.1%;
+  text-align: center;
+  color: white;
+  background-color: blueviolet;
+  border-style: dashed; 
+  border-color: white;
+
 }
 
 #boxes .box img{
   width: 100px;
+  height: 100px;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: auto;
 }
 /* Footer */
 footer{
-  padding: 20px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* position:absolute;
-  bottom: 0;
-  width: 100%; */
-  /* margin: auto; */
+  
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
   color: white;
-  background-color: darkorchid;
+  background-color: darkviolet;
+  margin: 0;
   /* margin-top: 5px; */
 }
 footer #seoulf{
-  float:left;
+  /* float:left; */
 }
 footer #seoulf h1{
-  margin:0;
+  /* margin:0; */
 }
 
-/* footer .highlight{
-  color:white;
-  font-weight:bold;
-} */
 
  footer ul{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 footer li{
   /* float: left; */
   /* style: inline; */
-  padding: 0 10px 0 10px;
+  /* padding: 0 10px 0 10px; */
 }
 
 /* Activities and Festivities Page */
 
-.page2{
+.page2 {
+  background-color: blueviolet;
+  text-align: center;
+  color:#FFFFFF;
+  border-bottom: 5px black solid; 
+}
+.heading{
   font-weight: bold;
   text-align: center;
   color: black;
+  background: pink;
 }
 
 
 .column{
 /* display: block; */
 text-align: center;
-background-color: magenta;
+background-color: darkviolet;
 padding: 5px;
 width: 35%;
 margin: auto;
 border-radius: 12px;
+border: 2px dotted blueviolet;
 box-shadow: 2px 2px 5px #bf00ff;
 /* horizontal vertical blur */
 margin-bottom: 10px;
@@ -174,16 +181,19 @@ width: 200px;
 /* object-fit: contain; */
 border-radius: 12%;
 }
-.column h3{
-font-weight: bolder;
-color: white;
-}
 
-.column h4, span, p{
+
+.column h3, h4, strong, p{
 font-weight: bold;
 color: white;
 }
 
+
+/* page 3 */
+.page3{
+  background: blueviolet;
+  border-bottom:5px black solid;
+}
 
 form{
 width: 420px;
@@ -193,23 +203,23 @@ padding: 20px;
 form h1{
   text-align: center;
   color: white;
-  background: magenta;
+  background: darkviolet;
   border-radius: 5px;
-  border: 2px solid purple;
-  box-shadow: 2px 2px 3px #ff00ff;
+  border: 2px dotted white;
+  box-shadow: 2px 2px 3px blueviolet;
 }
 form .contact {
   color:white;
   font-size: 18px;
   border-radius: 5px;
   width: 100%;
-  background-color: pink;
-  border:2px solid hotpink;
+  background-color: darkviolet;
+  border:2px dotted white;
   transition: all 0.3s;
   padding: 12px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  box-shadow: 2px 2px 3px #ff00ff;
+  box-shadow: 2px 2px 3px blueviolet;
 }
 
 textarea {
@@ -219,9 +229,9 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background:pink;
+  background:blueviolet;
   border-radius:5px;
-  border:none;
+  border:2px dotted white;
   cursor:pointer;
   color:white;
   font-size:24px;
@@ -229,4 +239,4 @@ textarea {
   padding-bottom:10px;
   font-weight: bold;
 }
-[type="submit"]:hover { background:hotpink; }
+[type="submit"]:hover { background: black; }
